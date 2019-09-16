@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/**=====================================================================================
+ * font
+ *======================================================================================*/
+$fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, PingFangHK, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$baseFS: 14px !default;
+$smallFS: 12px !default;
+$largeFS: 16px !default;
+$hugeFS: 18px !default;
+
+$titlePrimaryFS: $baseFS !default;
+
+$contentPrimaryFS: $baseFS !default;
+$contentSmallFS: $smallFS !default;
+
+$buttonPrimaryFS: $smallFS !default;
+
+$menuPrimaryFS: $baseFS !default;
+
+$borderRadius: 2px !default;
+
+/**=====================================================================================
+ * line-height
+ *======================================================================================*/
+$primaryLH: 1.5 !default;
+
+/**=====================================================================================
+ * font color
+ *======================================================================================*/
+// 主题色
+$themeColor: #587DDA !default;
+$textColor: #333 !default;
+$iconColor: #999 !default;
+
+$colorWhite: #FFF !default;
+$colorBlack: #000 !default;
+
+// 正文、标题、菜单、导航
+$contentColor: $textColor !default;
+$titleColor: $textColor !default;
+$menuColor: $textColor !default;
+$navigateColor: $textColor !default;
+
+//提示文字
+$tipsColor: rgba($textColor, .7) !default;
+$tipsDisabledColor: rgba($textColor, .5) !default;
+
+//左侧菜单文字
+$darkMenuTextDefaultColor: rgba($colorWhite, .6) !default;
+$darkMenuTextHoverColor: $colorWhite !default;        
+$darkMenuTextActiveColor: #1F1048 !default;
+
+//二级菜单文字
+$subMenuTextDefaultColor: $textColor !default;
+$subMenuTextHoverColor: $themeColor !default;        
+$subMenuTextActiveColor: $textColor !default;
+
+//深色按钮文字
+$darkButtonTextDefaultColor: $colorWhite !default;
+$darkButtonTextHoverColor: $colorWhite !default;
+$darkButtonTextDisabledColor: rgba($colorWhite, .6) !default;
+
+//浅色按钮文字
+$lightButtonTextDefaultColor: $textColor !default;
+$lightButtonTextHoverColor: $themeColor !default;
+$lightButtonTextDisabledColor: rgba($textColor, .5) !default;
+
+//浅色文字链接颜色
+$lightLinkDefaultColor: $textColor !default;
+$lightLinkHoverColor: #218ADB !default;
+
+//深色文字链接颜色
+$darkLinkDefaultColor: $themeColor !default;
+$darkLinkHoverColor: rgba(#218ADB, .7) !default;
+
+// 辅助色
+$doingColor: #3DCD8A !default;
+$compeleteColor: #FFA944 !default;
+$warningColor: #FF614C !default;
+
+/**=====================================================================================
+ * background color
+ *======================================================================================*/
+$colorPageBg: #F6F7F9 !default;
+$colorTitleBg: #F6F7F9 !default;
+$colorImgBg: #D8D8D8 !default;
+$colorBtn: #eef2fb !default;
+
+//左侧菜单背景色
+$darkMenuBackgroundDefaultColor: #1F1048 !default;
+$darkMenuBackgroundHoverColor: #403560 !default;
+$darkMenuBackgroundActiveColor: $colorWhite !default;
+
+//二级菜单背景颜色
+$subMenuBackgroundDefaultColor: $colorWhite !default;
+$subMenuBackgroundActiveColor: #E8E7EC !default;
+
+// 深色按钮背景颜色
+$darkButtonBackgroundDefaultColor: $themeColor !default;
+$darkButtonBackgroundHoverColor: #7896E1 !default;
+$darkButtonBackgroundDisabledColor: #8BA3DF !default;
+
+// tab
+$tabBackgroundColor: #FAFAFA !default;
+
+//swiper左右箭头颜色
+$swiperArrowColor: #979797 !default;
+
+// 自定义表格下拉列表及自定义表格hover背景色
+$customTableDropDownListBackgroundColor: #fafbfc !default;
+
+/**=====================================================================================
+ * border color
+ *======================================================================================*/
+$borderDefaultColor: #DDD !default;
+$borderHoverColor: #BCBCBC !default;
+$borderActiveColor: $themeColor !default;
+$borderDisabledColor: rgba($borderDefaultColor, .5) !default;
+
+$separateDefaultColor: #EEE !default;
+
+$borderColor: #cdd8f4;
+
+/**=====================================================================================
+ * scrollbar
+ *======================================================================================*/
+$darkScrollbarBackgroundColor: rgba($colorWhite, .3) !default;
+$darkScrollbarColor: rgba($colorWhite, .6) !default;
+
+$lightScrollbarBackgroundColor: rgba($colorBlack, .1) !default;
+$lightScrollbarColor: rgba($colorBlack, .3) !default;
+
+
+
+
+
+
+
+
+
+
+
+
+

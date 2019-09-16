@@ -1,0 +1,1 @@
+scp -r /Users/luoym/Desktop/renhe/zanfuwu/ru_CRM/dist/* root@114.55.43.114:/home/rumall/crm/assets

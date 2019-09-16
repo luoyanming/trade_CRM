@@ -1,0 +1,284 @@
+// @import "./mixin-font";
+
+// /**=====================================================================================
+//  * 基础设置
+//  *======================================================================================*/
+// $--color-primary: $themeColor !default;
+// $--color-success: $doingColor !default;
+// $--color-warning: $compeleteColor !default;
+// $--color-danger:  $warningColor !default;
+// $--color-info: $tipsColor !default;
+
+// $--color-text-primary: $textColor !default;
+// $--color-text-regular: $textColor !default;
+// $--color-text-secondary: $tipsColor !default;
+// $--color-text-placeholder: $tipsColor !default;
+
+
+// /**=====================================================================================
+//  * link
+//  *======================================================================================*/
+// $--link-color: $darkLinkDefaultColor !default;
+// $--link-hover-color: $darkLinkHoverColor !default;
+
+
+// /**=====================================================================================
+//  * border
+//  *======================================================================================*/
+// $--border-width-base: 1px !default;
+// $--border-style-base: solid !default;
+// $--border-color-base: $borderDefaultColor !default;
+// // $--border-color-light: #e4e7ed !default;
+// // $--border-color-lighter: #ebeef5 !default;
+// // $--border-color-extra-light: #f2f6fc !default;
+// $--border-color-hover: $borderHoverColor !default;
+// $--border-radius-base: 2px !default;
+
+
+// /**=====================================================================================
+//  * font
+//  *======================================================================================*/
+// $--font-path: '~element-ui/lib/theme-chalk/fonts';
+// $--font-size-base: $baseFS !default;
+// $--font-size-small: $smallFS !default;
+// $--font-size-large: $largeFS !default;
+// $--font-color-disabled-base: $tipsDisabledColor !default;
+// $--font-weight-primary: 400 !default;
+// $--font-line-height-primary: $primaryLH !default;
+
+
+// /**=====================================================================================
+//  * size
+//  *======================================================================================*/
+// $--size-base: $baseFS !default;
+
+
+// /**=====================================================================================
+//  * z-index
+//  *======================================================================================*/
+// $--index-normal: 1 !default;
+// $--index-top: 1000 !default;
+// $--index-popper: 2000 !default;
+
+
+// /**=====================================================================================
+//  * disabled
+//  *======================================================================================*/
+// $--disabled-fill-base: transparent !default;
+// $--disabled-color-base: $tipsDisabledColor !default;
+// $--disabled-border-base: $borderDisabledColor !default;
+
+
+// /**=====================================================================================
+//  * icon
+//  *======================================================================================*/
+// $--icon-color: $iconColor !default;
+
+
+// /**=====================================================================================
+//  * checkbox
+//  *======================================================================================*/
+// $--checkbox-font-size: $smallFS !default;
+
+// $--checkbox-checked-text-color: $textColor !default;
+
+
+// /**=====================================================================================
+//  * radio
+//  *======================================================================================*/
+// $--radio-font-size: $smallFS !default;
+
+
+// /**=====================================================================================
+//  * select
+//  *======================================================================================*/
+// $--select-multiple-input-color: #666 !default;
+// $--select-input-focus-background: $--color-primary !default;
+// $--select-input-font-size: $smallFS !default;
+
+// $--select-option-height: 34px !default;
+
+// $--select-group-height: 30px !default;
+// $--select-group-font-size: $smallFS !default;
+
+
+
+// /**=====================================================================================
+//  * message box
+//  *======================================================================================*/
+// $--msgbox-width: 500px !default;
+// $--msgbox-border-radius: $--border-radius-base !default;
+// $--msgbox-error-font-size: $smallFS !default;
+// $--msgbox-padding-primary: 20px !default;
+
+
+// /**=====================================================================================
+//  * input
+//  *======================================================================================*/
+// $--input-width: 300px !default;
+// $--input-height: 28px !default;
+// $--input-max-width: 300px !default;
+// $--input-icon-color: $--icon-color !default;
+
+// $--input-focus-border: $borderActiveColor !default;
+
+// $--input-medium-font-size: $baseFS !default;
+// $--input-medium-height: 32px !default;
+
+// $--input-small-font-size: $smallFS !default;
+// $--input-small-height: 28px !default;
+
+
+// /**=====================================================================================
+//  * tab
+//  *======================================================================================*/
+// $--tab-border-line: 1px solid $separateDefaultColor !default;
+// $--tab-header-color-active: $textColor !default;
+// $--tab-header-color-hover: $textColor !default;
+// $--tab-header-color: $tipsColor !default;
+// $--tab-header-fill-active: $colorWhite !default;
+// $--tab-header-fill-hover: $tabBackgroundColor !default;
+
+
+// /**=====================================================================================
+//  * button
+//  *======================================================================================*/
+// $--button-font-size: 14px !default;
+// $--button-padding-vertical: 8px !default;
+// $--button-padding-horizontal: 12px !default;
+
+// $--button-medium-font-size: 16px !default;
+// $--button-medium-padding-vertical: 12px !default;
+// $--button-medium-padding-horizontal: 16px !default;
+
+// $--button-small-font-size: 12px !default;
+// $--button-small-border-radius: $--border-radius-base !default;
+// $--button-small-padding-vertical: 6px !default;
+// $--button-small-padding-horizontal: 10px !default;
+
+// $--button-default-color: $textColor !default;
+// $--button-default-border: $borderDefaultColor !default;
+
+// $--button-disabled-color: $tipsDisabledColor !default;
+// $--button-disabled-border: $darkButtonBackgroundDisabledColor !default;
+// $--button-disabled-fill: $darkButtonBackgroundDisabledColor !default;
+
+// $--button-primary-border: $themeColor !default;
+// $--button-primary-color: $colorWhite !default;
+// $--button-primary-fill: $themeColor !default;
+
+// $--button-hover-tint-percent: 20% !default;
+// $--button-active-shade-percent: 10% !default;
+
+
+// /**=====================================================================================
+//  * switch
+//  *======================================================================================*/
+// $--switch-on-color: #43B034 !default;
+// // $--switch-disabled-color: $--border-color-lighter !default;
+// // $--switch-disabled-text-color: $--color-text-placeholder !default;
+
+// $--switch-font-size: $smallFS !default;
+// $--switch-core-border-radius: 12px !default;
+// $--switch-width: 40px !default;
+// $--switch-height: 24px !default;
+// $--switch-button-size: 20px !default;
+
+
+// /**=====================================================================================
+//  * dialog
+//  *======================================================================================*/
+// $--dialog-background-color: $colorWhite !default;
+// $--dialog-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !default;
+// $--dialog-close-hover-color: $themeColor !default;
+// $--dialog-title-font-size: $baseFS !default;
+// $--dialog-font-size: $smallFS !default;
+
+
+// /**=====================================================================================
+//  * table
+//  *======================================================================================*/
+// $--table-border-color: $borderDefaultColor !default;
+// $--table-header-color: $textColor !default;
+// $--table-row-hover-background: rgba($colorTitleBg, .5) !default;
+// $--table-current-row-background: rgba($themeColor, .7) !default;
+// $--table-header-background: $colorTitleBg !default;
+// $--table-footer-background: $colorTitleBg !default;
+
+
+// /**=====================================================================================
+//  * pagination
+//  *======================================================================================*/
+// $--pagination-font-size: $smallFS !default;
+// $--pagination-fill: $colorWhite !default;
+// $--pagination-color: $textColor !default;
+// $--pagination-border-radius: $--border-radius-base !default;
+// $--pagination-button-color: $--color-text-primary !default;
+// $--pagination-button-width: 28px !default;
+// $--pagination-button-height: 28px !default;
+// $--pagination-button-disabled-color: $tipsColor !default;
+// $--pagination-button-disabled-fill: $colorWhite !default;
+// $--pagination-hover-fill: $colorWhite !default;
+// $--pagination-hover-color: $themeColor !default;
+
+
+// /**=====================================================================================
+//  * popover
+//  *======================================================================================*/
+// $--popover-font-size: $smallFS !default;
+// $--popover-border-color: rgba($borderDefaultColor, .5) !default;
+// $--popover-arrow-size: 6px !default;
+// $--popover-padding: 10px 12px !default;
+// $--popover-padding-large: 10px 12px !default;
+// $--popover-title-font-size: $baseFS !default;
+
+
+// /**=====================================================================================
+//  * tooltip
+//  *======================================================================================*/
+// $--tooltip-fill: $colorWhite !default;
+// $--tooltip-color: $textColor !default;
+// $--tooltip-font-size: $smallFS !default;
+// $--tooltip-border-color: rgba($borderDefaultColor, .5) !default;
+// $--tooltip-arrow-size: 6px !default;
+// $--tooltip-padding: 10px 12px !default;
+
+
+// /**=====================================================================================
+//  * dropdown
+//  *======================================================================================*/
+// // $--dropdown-menu-box-shadow: $--box-shadow-light !default;
+// // $--dropdown-menuItem-hover-fill: $--color-primary-light-9 !default;
+// // $--dropdown-menuItem-hover-color: $--link-color !default;
+
+
+// /**=====================================================================================
+//  * datepicker
+//  *======================================================================================*/
+// $--datepicker-icon-color: $tipsColor !default;
+// $--datepicker-inner-border-color: $borderDefaultColor !default;
+// $--datepicker-inrange-color: $tipsColor !default;
+// $--datepicker-inrange-hover-color: $tipsColor !default;
+// $--datepicker-text-hover-color: $--color-primary !default;
+// $--datepicker-cell-hover-color: #fff !default;
+
+
+// @import "~element-ui/packages/theme-chalk/src/index";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

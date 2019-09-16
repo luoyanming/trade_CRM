@@ -1,0 +1,309 @@
+@import "./mixin-font";
+@import "./mixin-common";
+
+/**=====================================================================================
+ * *
+ *======================================================================================*/
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 0;
+    font-weight: normal;
+    // -webkit-tap-highlight-color:rgba(0,0,0,0);
+    border: none;
+    font: inherit;
+    vertical-align: baseline;
+    word-wrap:break-word;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+li,
+ol{
+    list-style: none;
+}
+
+
+/**=====================================================================================
+ * input
+ *======================================================================================*/
+input,
+textarea,
+button{
+    -webkit-appearance:none;
+}
+
+input,
+textarea,
+button{
+    background: transparent;
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    }
+    &::-webkit-search-cancel-button {
+        display: none;
+    }
+}
+
+:-moz-placeholder {
+    color: $tipsColor;  
+}
+
+::-moz-placeholder {
+    color: $tipsColor; 
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: $tipsColor; 
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: $tipsColor;
+}
+
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/**=====================================================================================
+ * link
+ *======================================================================================*/
+a{
+    text-decoration: none;
+    tap-highlight-color: rgba(0,0,0,0);
+    focus-ring-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0,0,0,0);
+    -moz-focus-ring-color: rgba(0, 0, 0, 0);
+}
+
+/**=====================================================================================
+ * img
+ *======================================================================================*/
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+/**=====================================================================================
+ * scrollbar
+ *======================================================================================*/
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgba($colorBlack, .1);
+
+    &:hover{
+        background: rgba($colorBlack, .3);
+    }
+}
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: transparent;
+
+    &:hover{
+        background: rgba($colorBlack, .1);
+        border-radius: 3px;
+    }
+}
+
+/**=====================================================================================
+ * page selected style
+ *======================================================================================*/
+::selection {
+    background: $themeColor;
+    color: $colorWhite;
+}
+
+/**=====================================================================================
+ * clearfix
+ *======================================================================================*/
+.clearfix:before,
+.clearfix:after{
+    content:"";
+    display: block;
+    height: 0;
+    line-height:0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/**=====================================================================================
+ * font-size media query
+ *======================================================================================*/
+// @media only screen and (min-width: 400px) {
+//     html, body {
+//         font-size: 21.33333333px !important;
+//     }
+// }
+// @media only screen and (min-width: 414px) {
+//     html, body {
+//         font-size: 22.08px !important;
+//     }
+// }
+// @media only screen and (min-width: 480px) {
+//     html, body {
+//         font-size: 25.6px !important;
+//     }
+// }
+
+
+
+/**=====================================================================================
+ * flex
+ *======================================================================================*/
+.flex-h{
+    @extend %flex;
+    @include boxOrient(horizontal);
+    @include boxDirection(normal);
+    @include flexDirection(row);
+}
+.flex-v{
+    @extend %flex;
+    @include boxOrient(vertical);
+    @include boxDirection(normal);
+    @include flexDirection(column);
+}
+.flex-a{
+    @extend %flex;
+    @include boxPack(justify);
+    @include flexPack(justify);
+    @include flexAlign(center);
+    @include justifyContent(space-between);
+      align-content: center;
+}
+.flex-center{
+    @include boxPack(justify);
+    @include flexPack(center);
+    @include justifyContent(center);
+}
+.flex-v-c{
+    @extend %flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.flex-a-i{
+    @include flexColum(1);
+}
+
+
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../../assets/font/iconfont.eot');
+    src: url('../../assets/font/iconfont.woff2') format('woff2'),
+         url('../../assets/font/iconfont.woff') format('woff'),
+         url('../../assets/font/iconfont.ttf') format('truetype'),
+         url('../../assets/font/iconfont.svg#iconfont') format('svg'),
+         url('../../assets/font/iconfont.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zizuan:before {
+  content: "\e602";
+}
+
+.icon-bofang5:before {
+  content: "\e655";
+}
+
+.icon-tubiao:before {
+  content: "\e6cf";
+}
+
+.icon-cha:before {
+  content: "\e6c4";
+}
+
+.icon-duoxuankuang:before {
+  content: "\e613";
+}
+
+.icon-zanting:before {
+  content: "\e7c9";
+}
+
+.icon-xuanzhong:before {
+  content: "\e601";
+}
+
+.icon-zanting1:before {
+  content: "\e639";
+}
+
+.icon-tubiaozhizuo-:before {
+  content: "\e600";
+}
+
+.icon-shuaxin:before {
+  content: "\e6c0";
+}
+
+
+/**=====================================================================================
+ * html
+ *======================================================================================*/
+html{
+    font-size: 20px;
+    background-color: $colorPageBg;
+    font-family: $fontFamily;
+}
+html,
+body{
+    height: 100%;
+    background-color: #eee;
+}
+body{
+    min-width: 1260px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+
+/**=====================================================================================
+ * app
+ *======================================================================================*/
+ #app{
+    position: relative;
+    height: 100%;
+ }
+
+
+
+
+

@@ -1,0 +1,210 @@
+@import "./base/reset";
+
+ // name - fade
+.fade-enter-active {
+  transition: opacity .5s;
+}
+.fade-leave-active {
+  // transition: opacity .3s;
+}
+
+.fade-enter,
+.fade-leave-to{
+    opacity: 0;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+
+    &:hover{
+        opacity: .7;
+    }
+
+    &:active{
+        opacity: .85;
+    }
+}
+
+.left-side {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.right-side {
+    width: calc(100vw - 220px);
+    margin-top: 10px;
+    margin-left: 10px;
+
+    .section-block{
+        background-color: #FFF;
+
+        & + .section-block{
+            margin-top: 10px;
+        }
+    }
+}
+
+.el-dropdown-menu{
+    .el-dropdown-menu__item{
+        white-space: nowrap;
+    }
+}
+
+
+.el-card{
+    padding: 10px;
+    height: 100%;
+    @extend .flex-v;
+
+    .el-card__header{
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid rgb(206, 204, 204);
+
+        .label{
+            float: left;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .btn-wrap{
+            float: right;
+            font-size: 0;
+
+            .iconfont{
+                position: relative;
+                width: 20px;
+                height: 20px;
+                font-size: 20px;
+                line-height: 20px;
+                text-align: center;
+                cursor: pointer;
+
+                &:before{
+                }
+
+                &.icon-shuaxin{
+                    color: rgb(128, 128, 128);
+                }
+
+                &.icon-duoxuankuang{
+                    color: rgb(214, 213, 213);
+                }
+
+                &.icon-xuanzhong{
+                    @include position(absolute, 1, 0, 0, 0, 0);
+                    color: rgb(83, 213, 42);
+                }
+
+                &.icon-bofang5{
+                    color: rgb(83, 213, 42);
+                }
+
+                &.icon-zanting{
+                    color: rgb(245, 184, 49);
+                }
+
+                &.icon-zanting1{
+                    color: rgb(231, 1, 14);
+                }
+
+                &.icon-cha{
+                    color: rgb(76, 76, 76);
+                }
+
+                & + .iconfont{
+                    margin-left: 10px;
+                }
+
+                &:hover{
+                    opacity: .7;
+                }
+
+                &:active{
+                    opacity: .85;
+                }
+
+                &[disabled="disabled"]{
+                    cursor: not-allowed;
+
+                    opacity: .5;
+
+                    &:hover{
+                        opacity: .5;
+                    }
+
+                    &:active{
+                        opacity: .5;
+                    }
+                }
+            }
+
+            .line{
+                display: inline-block;
+                margin: -5px 20px;
+                height: 30px;
+                width: 1px;
+                background-color: rgb(207, 206, 206);
+                overflow: hidden;
+                text-indent: -999em;
+                vertical-align: top;
+            }
+        }
+    }
+
+    .el-card__body{
+        padding: 0;
+        @extend .flex-a-i;
+    }
+}
+
+.section-loading{
+    padding: 20% 0 20% 0;
+    text-align: center;
+}
+
+.el-tabs{
+    height: 100%;
+    padding: 0 10px 10px 10px;
+
+    .el-tabs__header{
+        margin: 0;
+    }
+
+    .el-tabs__content{
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
